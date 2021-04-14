@@ -1,0 +1,40 @@
+.favoriteMenu{
+position: fixed;
+width:300px;
+height:400px;
+z-index: 2;
+top:50px;
+overflow:scroll;
+overflow-x: hidden;
+overflow-y:initial;
+background-color: #4F3933;
+color:white;
+border-radius: 5px;
+border-bottom: solid white;
+}
+.favoriteMenu div{
+    font-size:20px;
+    font-weight: 700;
+    background-color: #4F3933;
+    text-align: left;
+  border-bottom: 3px solid white;
+   border-radius: 0px;
+}
+.favoriteMenu div img{
+    border:2px solid black;
+    margin-top: 5px;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
