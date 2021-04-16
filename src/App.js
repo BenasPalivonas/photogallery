@@ -4,8 +4,8 @@ import Navbar from './Navbar/Navbar.js';
 import './App.css';
 import DatePicker from './DatePicker/DatePicker';
 const App = () => {
-    const [tag, setTag] = useState("");
-    const [date, setDate] = useState(1);
+    const [tag, setTag] = useState('nature');
+    const [date, setDate] = useState(7);
     const [favorites, setFavorites] = useState([]);
     const onChange = (text) => {
         setTag(text);
@@ -31,10 +31,9 @@ const App = () => {
     useEffect(() => {
         console.log(JSON.parse(sessionStorage.getItem('favoriteItems')));
         let favs = JSON.parse(sessionStorage.getItem('favoriteItems'))
-        if (favs === null) {
-            favs = []
+        if (favs !== null) {
+            setFavorites(favs);
         }
-        setFavorites(favs);
     }, [])
     return (<div>
         <Navbar favorites={favorites} onChange={onChange} deleteFavorite={deleteFavorite} addFavorites={addFavorites} />
