@@ -9,8 +9,7 @@ overflow-x: hidden;
 overflow-y:initial;
 background-color: #4F3933;
 color:white;
-border-radius: 5px;
-border-bottom: solid white;
+border:1px solid white;
 }
 .favoriteMenu div{
     font-size:20px;

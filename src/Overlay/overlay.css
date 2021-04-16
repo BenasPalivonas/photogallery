@@ -8,6 +8,7 @@ transform:translate(-50%,-50%);
 width:400px;
 height:400px;
 background-color: rgba(51,51,51,0.7);
+ border-radius: 25px;
 }
 .cardOverlay h1{
 width:350px;
